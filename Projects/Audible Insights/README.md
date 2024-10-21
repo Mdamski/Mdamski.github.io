@@ -22,7 +22,6 @@ The dataset contains the following columns:
 ## Data Cleaning and Preprocessing
 Before diving into the analysis, the data underwent the following cleaning steps:
 
-Missing Values: Missing or null values in the Price and Ratings columns were handled using imputation techniques (e.g., filling missing prices with the median or mode of the dataset). [Example step, replace if necessary].
 Formatting: All dates were formatted uniformly to reflect the correct releasedate structure for timeline analysis.
 Data Type Adjustments: Ensured that Price, Ratings, and releasedate columns were in their proper data types (numeric and date formats).
 Outlier Detection: Outliers in the Price column (extreme values above a certain threshold) were flagged and evaluated to ensure they were not errors or misentered data points.
