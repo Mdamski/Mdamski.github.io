@@ -40,12 +40,11 @@ Numeric columns like 'Sales,' 'Quantity,' 'Profit,' and 'Postal Code' were set t
 ## Data Model
 Two additional tables were created to enhance the functionality of the dashboard:
 
-Slc_Values: A table with one column containing three rows: 'Sales,' 'Profit,' and 'Quantity.' This table powers the slicer functionality, allowing users to switch between different metrics for analysis.
-Dim_Date: A date dimension table created using the CALENDAR function in DAX, containing dates from January 1, 2014, to December 31, 2017. This table is related to the Fact_Sales table on the 'Order Date' column in a one-to-many relationship.
-Measures
-The following DAX measures were used to calculate key metrics:
+- Slc_Values: A table with one column containing three rows: 'Sales,' 'Profit,' and 'Quantity.' This table powers the slicer functionality, allowing users to switch between different metrics for analysis.
+- Dim_Date: A date dimension table created using the CALENDAR function in DAX, containing dates from January 1, 2014, to December 31, 2017. This table is related to the Fact_Sales table on the 'Order Date' column in a one-to-many relationship.
 
 ## DAX
+The following DAX measures were used to calculate key metrics:
 
 Total Sales - Calculates the total sales amount.
  ```
@@ -136,3 +135,24 @@ result
 ```
 ## Model Relationships
 A 1-to-many relationship was established between the Dim_Date table (1) and the Fact_sales table (many) using the 'Order Date' field. This relationship enables accurate time-based calculations for year-over-year analysis.
+
+## Dashboard & Insights
+
+![image](https://github.com/user-attachments/assets/e370c0e4-01f0-4e61-af39-aac397c9f366)
+- State-Level Profit Growth: Indiana and California show notable growth in profitability YTD compared to PYTD.
+- Profit by Ship Mode: Standard Class and Second Class delivery methods contributed the most to the overall profit growth YTD.
+- Profit by Segment and Region: The Corporate and Consumer segments in the Central region experienced significant YTD profit growth, while the Home Office segment's growth remained moderate across most regions.
+
+![image](https://github.com/user-attachments/assets/58bb4848-30de-4536-9fd6-d28a80007174)
+- Quantity by State: Growth in quantity sold YTD outpaced PYTD in key regions like California and Texas.
+- Monthly Performance: Quantity sold shows consistent growth YTD compared to PYTD, particularly in mid-year (May) and the last quarter.
+- Quantity by Ship Mode: Similar to profit growth, Standard Class and First Class deliveries contributed significantly to quantity growth YTD.
+
+![image](https://github.com/user-attachments/assets/aaf2f457-2e84-414d-8420-62a40d20c6de)
+
+- Sales by the State: The biggest growth is noted in California and Indiana.
+- Mothly Performance: Sales increased steadily throughout the year, with notable growth in mid-year (May) and the last quarter (October and December). A slight dip was observed in August YTD vs PYTD.
+- Sales by Segment and Region: Corporate contributed to strong sales growth YTD compared to PYTD.
+
+## Conclusion:
+This analysis highlights substantial YTD growth across multiple metrics (profit, quantity, sales) compared to PYTD. Indiana and California are standout states for profit growth, while mid-year and year-end spikes in sales and quantity suggest seasonal shopping patterns. The steady performance of Standard and Second Class shipping methods also points to a consistent delivery preference linked to increased profitability and sales volume. 
