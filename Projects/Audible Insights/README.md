@@ -22,12 +22,12 @@ The dataset contains the following columns:
 ## Data Cleaning and Preprocessing
 Before diving into the analysis, the data underwent the following cleaning steps:
 
-- Author: Deleted "Writtenby:" before author name
-- Narrator: Deleted "Narratedby:" before narrator name
-- releasedate: Adjusted data type
-- Price: Adjusted data type
-- Time: Transformed from a text format (e.g., "2 hrs and 20 mins") to a numeric format representing total minutes (e.g., "140")
-- Stars: Transformed from a text format (e.g., "5 out of 5 stars34 ratings") to two separet columns. One for stars and second for ratings
+- Author: Deleted "Writtenby:" before author name.
+- Narrator: Deleted "Narratedby:" before narrator name.
+- releasedate: Adjusted data type.
+- Price: Adjusted data type.
+- Time: Transformed from a text format (e.g., "2 hrs and 20 mins") to a numeric format representing total minutes (e.g., "140").
+- Stars: Transformed from a text format (e.g., "5 out of 5 stars34 ratings") to two separet columns. One for stars and second for ratings.
 
 ## Data Cleaning in Power Querry Details 
 
