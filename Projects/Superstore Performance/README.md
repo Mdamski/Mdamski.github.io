@@ -1,4 +1,4 @@
-# Interactive Sales Dashboard (2016) - Data Analysis Project
+# Superstore - Interactive Sales Dashboard (2016) - Data Analysis Project
 ## Tools and Skills
 ### Tools Used: Power Query, Power BI, DAX
 ### Key Skills: Data Cleaning, Data Transformation, Data Modeling, Interactive Visualization
