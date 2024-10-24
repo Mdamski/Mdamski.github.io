@@ -92,3 +92,5 @@ From this analysis, several important insights were gleaned:
 - **Price Trends**: Audiobook prices have fluctuated over time, with a notable increase in recent years, which may be linked to shifts in content quality or demand.
 
 These insights can guide pricing strategies and promotional efforts, such as focusing on more affordable titles to boost user engagement or expanding content in non-English languages to tap into underrepresented markets
+## Dataset Source
+- **Source**: [Kaggle](https://www.kaggle.com/datasets/snehangsude/audible-dataset?select=audible_uncleaned.csv)
