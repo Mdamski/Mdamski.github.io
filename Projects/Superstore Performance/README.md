@@ -1,9 +1,10 @@
-# Interactive Sales Dashboard (2014-2017) - Data Analysis Project
-## Tools & Skills
+# Interactive Sales Dashboard (2016) - Data Analysis Project
+## Tools and Skills
 ### Tools Used: Power Query, Power BI, DAX
-### Skills Demonstrated: Data Transformation, Data Cleaning, Data Modeling, Interactive Visualization
+### Key Skills: Data Cleaning, Data Transformation, Data Modeling, Interactive Visualization
 ## Project Overview
-This project focuses on the creation of an interactive sales dashboard that allows users to slice data by year (2014–2017) and by key metrics: Sales, Profit, and Quantity. The dashboard provides a dynamic view of performance over time, enabling comparisons of current year-to-date (YTD) metrics with prior year-to-date (PYTD) performance. This analysis is particularly useful for businesses looking to assess their growth and make data-driven decisions.
+This project focuses on the creation of an interactive sales dashboard that allows users to slice data by year (2014–2017) and by key metrics: Sales, Profit, and Quantity. The dashboard provides a dynamic view of performance over time, enabling comparisons of current year-to-date (YTD) metrics with prior year-to-date (PYTD) performance. This analysis is particularly useful for businesses looking to assess their growth and make data-driven decisions.   
+This analysis focuses on 2016 to provide a concise and thorough understanding of key sales trends. Including all years would make the README excessively long and dilute key insights. Additionally, a drill-down feature in the waterfall chart allows users to explore the data across various levels, such as Month, Category, Sub-Category, and Product Name, adding depth to the analysis.
 
 ## Dataset
 The dataset contains the following columns:
@@ -32,49 +33,50 @@ The dataset contains the following columns:
 ## Data Cleaning and Preparation
 Before performing the analysis, several data cleaning steps were carried out to ensure the integrity and usability of the data:
 
-- Checking for duplicates: The dataset was scanned for duplicate entries to prevent double-counting of orders and to maintain accuracy in the sales and profit calculations. Duplicates, if found, were removed.
+- Checking for duplicates: The dataset was checked for duplicate entries to avoid double-counting orders and ensure accurate sales and profit calculations. Duplicates, if found, were removed.
 - Adjusting data types: Data types were carefully reviewed and adjusted where necessary. For example:
-Date columns such as 'Order Date' and 'Ship Date' were formatted as date fields.
-Numeric columns like 'Sales,' 'Quantity,' 'Profit,' and 'Postal Code' were set to appropriate numeric formats to allow for proper aggregations and calculations.
+  - Date columns such as 'Order Date' and 'Ship Date' were formatted as date fields.
+  - Numeric columns like 'Sales,' 'Quantity,' 'Profit,' and 'Postal Code' were set to appropriate numeric formats to allow for proper aggregations and calculations.
+
 
 ## Data Model
 Two additional tables were created to enhance the functionality of the dashboard:
 
-- Slc_Values: A table with one column containing three rows: 'Sales,' 'Profit,' and 'Quantity.' This table powers the slicer functionality, allowing users to switch between different metrics for analysis.
-- Dim_Date: A date dimension table created using the CALENDAR function in DAX, containing dates from January 1, 2014, to December 31, 2017. This table is related to the Fact_Sales table on the 'Order Date' column in a one-to-many relationship.
+- **Slc_Values**: A table with one column containing three rows: 'Sales,' 'Profit,' and 'Quantity.' This table powers the slicer functionality, allowing users to switch between different metrics for analysis.
+- **Dim_Date**: A date dimension table created using the CALENDAR function in DAX, containing dates from January 1, 2014, to December 31, 2017. This table is related to the Fact_Sales table on the 'Order Date' column in a one-to-many relationship.
 
 ## DAX
 The following DAX measures were used to calculate key metrics:
 
-Total Sales - Calculates the total sales amount.
+**Total Sales** - Calculates the total sales amount.
  ```
 Sales = SUM(Fact_sales[Sales])
 ```
-Total Profit - Calculates the total profit amount.
+**Total Profit** - Calculates the total profit amount.
 ```
 Profit = SUM(Fact_sales[Profit])
 ```
-Total Quantity - Calculates the total quantity of items sold.
+**Total Quantity** - Calculates the total quantity of items sold.
 ```
 Quantity = SUM(Fact_sales[Quantity])
 ```
-Profit Margin - Calculates the profit margin as profit divided by sales.
+**Profit Margin** - Calculates the profit margin as profit divided by sales.
 ```
 Profit Margin = DIVIDE([Profit], [Sales])
 ```
-Year-to-Date (YTD) Sales - Calculates the year-to-date (YTD) sales based on the 'Order Date.'
+**Year-to-Date (YTD) Sales** - Calculates the year-to-date (YTD) sales based on the 'Order Date.'
 ```
 YTD_Sales = TOTALYTD([Sales], Fact_sales[Order Date])
 ```
-Year-to-Date (YTD) Profit - Calculates the YTD profit based on the 'Order Date.'
+**Year-to-Date (YTD) Profit** - Calculates the YTD profit based on the 'Order Date.'
 ```
 YTD_Profit = TOTALYTD([Profit], Fact_sales[Order Date])
 ```
-Year-to-Date (YTD) Quantity - Calculates the YTD quantity of items sold.
+**Year-to-Date (YTD) Quantity** - Calculates the YTD quantity of items sold.
 ```
 YTD_Quantity = TOTALYTD([Quantity], Fact_sales[Order Date])
 ```
-Prior Year-to-Date (PYTD) Sales - Calculates the prior year-to-date PYTD sales.
+**Prior Year-to-Date (PYTD) Sales** - Calculates the prior year-to-date PYTD sales.
 ```
 PYTD_Sales = 
 CALCULATE(
@@ -83,7 +85,7 @@ CALCULATE(
     Dim_Date[Inpast] = TRUE
 )
 ```
-Prior Year-to-Date (PYTD) Profit - Calculates the PYTD profit.
+**Prior Year-to-Date (PYTD) Profit** - Calculates the PYTD profit.
 ```
 PYTD_Profit = 
 CALCULATE(
@@ -92,7 +94,7 @@ CALCULATE(
     Dim_Date[Inpast] = TRUE
 )
 ```
-Prior Year-to-Date (PYTD) Quantity - Calculates the PYTD quantity of items sold.
+**Prior Year-to-Date (PYTD) Quantity** - Calculates the PYTD quantity of items sold.
 ```
 PYTD_Quantity = 
 CALCULATE(
@@ -101,11 +103,11 @@ CALCULATE(
     Dim_Date[Inpast] = TRUE
 )
 ```
-Year-to-Date vs Prior Year-to-Date (YTD vs PYTD) - Calculates the difference between YTD and PYTD for the selected metric.
+**Year-to-Date vs Prior Year-to-Date (YTD vs PYTD)** - Calculates the difference between YTD and PYTD for the selected metric.
 ```
 YTD vs PYTD = [S_YTD] - [S_PYTD]
 ```
-Dynamic YTD Calculation - Dynamically calculates YTD (Sales, Profit, or Quantity) based on slicer selection.
+**Dynamic YTD Calculation (Switch Function)** - Dynamically calculates YTD (Sales, Profit, or Quantity) based on slicer selection.
 ```
 S_YTD = 
 VAR selected_value = SELECTEDVALUE(Slc_Values[Values])
@@ -119,7 +121,7 @@ VAR result = SWITCH(
 RETURN
 result
 ```
-Dynamic PYTD Calculation - Dynamically calculates PYTD (Sales, Profit, or Quantity) based on slicer selection.
+**Dynamic PYTD Calculation** - Dynamically calculates PYTD (Sales, Profit, or Quantity) based on slicer selection.
 ```
 S_PYTD = 
 VAR selected_value = SELECTEDVALUE(Slc_Values[Values])
@@ -139,20 +141,20 @@ A 1-to-many relationship was established between the Dim_Date table (1) and the 
 ## Dashboard & Insights
 
 ![image](https://github.com/user-attachments/assets/e370c0e4-01f0-4e61-af39-aac397c9f366)
-- State-Level Profit Growth: Indiana and California show notable growth in profitability YTD compared to PYTD.
-- Profit by Ship Mode: Standard Class and Second Class delivery methods contributed the most to the overall profit growth YTD.
-- Profit by Segment and Region: The Corporate and Consumer segments in the Central region experienced significant YTD profit growth, while the Home Office segment's growth remained moderate across most regions.
+- **State-Level Profit Growth**: Indiana and California show notable growth in profitability YTD compared to PYTD.
+- **Profit by Ship Mode**: Standard Class and Second Class delivery methods contributed the most to the overall profit growth YTD.
+- **Profit by Segment and Region**: The Corporate and Consumer segments in the Central region showed significant YTD profit growth, while the Home Office segment displayed moderate growth across most regions.
 
 ![image](https://github.com/user-attachments/assets/58bb4848-30de-4536-9fd6-d28a80007174)
-- Quantity by State: Growth in quantity sold YTD outpaced PYTD in key regions like California and Texas.
-- Monthly Performance: Quantity sold shows consistent growth YTD compared to PYTD, particularly in mid-year (May) and the last quarter.
-- Quantity by Ship Mode: Similar to profit growth, Standard Class and First Class deliveries contributed significantly to quantity growth YTD.
+- **Quantity by State**: Growth in quantity sold YTD outpaced PYTD in key regions like California and Texas.
+- **Monthly Performance**: Quantity sold shows consistent growth YTD compared to PYTD, particularly in mid-year (May) and the last quarter.
+- **Quantity by Ship Mode**: Similar to profit growth, Standard Class and First Class deliveries contributed significantly to quantity growth YTD.
 
 ![image](https://github.com/user-attachments/assets/aaf2f457-2e84-414d-8420-62a40d20c6de)
 
-- Sales by the State: The biggest growth is noted in California and Indiana.
-- Mothly Performance: Sales increased steadily throughout the year, with notable growth in mid-year (May) and the last quarter (October and December). A slight dip was observed in August YTD vs PYTD.
-- Sales by Segment and Region: Corporate contributed to strong sales growth YTD compared to PYTD.
+- **Sales by the State**: The biggest growth is noted in California and Indiana.
+- **Mothly Performance**: Sales increased steadily throughout the year, with notable growth in mid-year (May) and the last quarter (October and December). A slight dip was observed in August YTD vs PYTD.
+- **Sales by Segment and Region**: Corporate contributed to strong sales growth YTD compared to PYTD.
 
 ## Conclusion:
 This analysis highlights substantial YTD growth across multiple metrics (profit, quantity, sales) compared to PYTD. Indiana and California are standout states for profit growth, while mid-year and year-end spikes in sales and quantity suggest seasonal shopping patterns. The steady performance of Standard and Second Class shipping methods also points to a consistent delivery preference linked to increased profitability and sales volume. 
