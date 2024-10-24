@@ -29,6 +29,8 @@ B.S., Civil Engineering | Uniwersytet Technologiczno-Przyrodniczy w Bydgoszczy (
   <img src="assets/Superstore.png" alt="Superstore Project" width="600" style="margin: 40px 0;" />
 </div>
 
+<br>
+
 ### Audible - Audiobook Sales Data - Data Analysis Project
 [Link](https://github.com/Mdamski/Mdamski.github.io/blob/main/Projects/Audible%20Insights/README.md)   
 **Tools Used**: Power BI, Power Query, DAX
@@ -39,6 +41,8 @@ B.S., Civil Engineering | Uniwersytet Technologiczno-Przyrodniczy w Bydgoszczy (
   <img src="assets/Audible.png" alt="Audible Project" width="500" style="margin: 40px 0;" />
 </div>
 
+<br>
+
 ### Kickstarter Projects (2009-2017) – Data Analysis Project
 [Link](https://github.com/Mdamski/Mdamski.github.io/tree/main/Projects/Kickstarter%20Projects%202009-2017)   
 **Tools Used**: Power BI, Power Query, DAX
@@ -48,6 +52,8 @@ B.S., Civil Engineering | Uniwersytet Technologiczno-Przyrodniczy w Bydgoszczy (
 <div align="center">
   <img src="assets/Kickstarter.png" alt="Kickstarter Project" width="500" style="margin: 40px 0;" />
 </div>
+
+<br>
 
 ### Toy Sales in Mexico – SQL Analysis Project
 [Link](https://github.com/Mdamski/Mdamski.github.io/tree/main/Projects/Toy%20Sales%20in%20Mexico)   
