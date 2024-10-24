@@ -82,7 +82,7 @@ in
 - Narrator: The name of the narrator (Text)
 - releasedate: The release date of the audiobook. (Date)
 - language: The primary language of the audiobook. (Text)
-- Price: The price of the audiobook. (Decimal)
+- Price: The price of the audiobook. (Numeric)
 - Time: The time of the audiobook in minutes (Numeric)
 - Stars: The star rating of the audiobook. (Decimal)
 - Ratings: The number of user ratings for each audiobook. (Numeric)
