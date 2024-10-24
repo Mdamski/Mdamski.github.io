@@ -1,6 +1,6 @@
 # Audible Insights Dashboard - Data Analysis Project
 
-## Tools & Skills
+## Tools and Skills
 ### Tools Used: Power Query, DAX, Power BI
 ### Skills Demonstrated: Data Cleaning, Data Transformation, Data Visualization
 
@@ -95,9 +95,9 @@ in
 ## Insights and Conclusions
 From this analysis, several important insights were gleaned:
 
-- Price and Ratings: Lower-priced audiobooks generally receive more ratings, indicating a potential relationship between affordability and user engagement.
-- Language Distribution: The audiobook market is overwhelmingly dominated by English titles, but there is a significant presence of non-English titles, particularly in languages like German and Spanish.
-- Top Authors: A small number of authors are responsible for a large portion of audiobook production, with SmartReading as a notable leader.
-- Price Trends: Audiobook prices have fluctuated over time, with a notable increase in recent years, which may be linked to shifts in content quality or demand.
+- **Price and Ratings**: Lower-priced audiobooks generally receive more ratings, indicating a potential relationship between affordability and user engagement.
+- **Language Distribution**: The audiobook market is overwhelmingly dominated by English titles, but there is a significant presence of non-English titles, particularly in languages like German and Spanish.
+- **Top Authors**: A small number of authors are responsible for a large portion of audiobook production, with SmartReading as a notable leader.
+- **Price Trends**: Audiobook prices have fluctuated over time, with a notable increase in recent years, which may be linked to shifts in content quality or demand.
 
 These insights can guide pricing strategies and promotional efforts, such as focusing on more affordable titles to boost user engagement or expanding content in non-English languages to tap into underrepresented markets
