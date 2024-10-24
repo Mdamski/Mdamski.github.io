@@ -1,6 +1,6 @@
 # Toy Sales in Mexico - SQL Data Analysis Project
 
-## Tools & Skills
+## Tools and Skills
 ### Tools Used: SQL
 ### Skills Demonstrated: Data Querying, Aggregation, Joins, CTE, Data Analysis,
 
