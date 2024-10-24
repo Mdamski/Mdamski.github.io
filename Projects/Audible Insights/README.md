@@ -32,10 +32,6 @@ Before diving into the analysis, the data underwent the following cleaning steps
 ## Data Cleaning in Power Querry Details 
 
 Detailed list of the applied steps during data cleaning process
-# Audible Insights
-Power Query code for processing Audible data
-
-## Code
 ```powerquery
 let
     Source = Csv.Document(File.Contents("C:\Users\Micha\Desktop\Dane\Audible\audible_uncleaned.csv"),[Delimiter=",", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.None]),
