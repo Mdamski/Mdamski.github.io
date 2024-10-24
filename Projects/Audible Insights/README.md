@@ -32,8 +32,8 @@ Before diving into the analysis, the data underwent the following cleaning steps
 ## Data Cleaning in Power Querry Details 
 
 Detailed list of the applied steps during data cleaning process
-{% raw %}
 ```powerquery
+{% raw %}
 let
     Source = Csv.Document(File.Contents("C:\Users\Micha\Desktop\Dane\Audible\audible_uncleaned.csv"),[Delimiter=",", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.None]),
     #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
@@ -64,8 +64,8 @@ let
     #"Changed Type6" = Table.TransformColumnTypes(#"Removed Errors",{{"Ratings_corrected", Int64.Type}})
 in
     #"Changed Type6"
-```
 {% endraw %}
+```
 ## Dataset After Cleaning
 
 - Name: The name of the audiobook. (Text)
