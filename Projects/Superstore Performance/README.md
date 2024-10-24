@@ -150,7 +150,7 @@ A 1-to-many relationship was established between the Dim_Date table (1) and the 
 - **Monthly Performance**: Quantity sold shows consistent growth YTD compared to PYTD, particularly in mid-year (May) and the last quarter.
 - **Quantity by Ship Mode**: Similar to profit growth, Standard Class and First Class deliveries contributed significantly to quantity growth YTD.
 
-![image](https://github.com/user-attachments/assets/aaf2f457-2e84-414d-8420-62a40d20c6de)
+![image](https://github.com/user-attachments/assets/154ed10b-9f72-45fe-aa3e-646512d20a4d)
 
 - **Sales by the State**: The biggest growth is noted in California and Indiana.
 - **Mothly Performance**: Sales increased steadily throughout the year, with notable growth in mid-year (May) and the last quarter (October and December). A slight dip was observed in August YTD vs PYTD.
