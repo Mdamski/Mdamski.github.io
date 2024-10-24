@@ -37,3 +37,5 @@ expansion strategies.
 - **Project Performance**: Projects such as Exploding Kittens and Coolest Cooler achieved extraordinary success, both in terms of exceeding their goals and in total pledged money. This suggests that projects with strong viral appeal and consumer-focused products are more likely to outperform their targets.
 
 These insights could be valuable for project creators looking to launch successful campaigns, as well as for platform strategy and marketing efforts aimed at reviving activity or focusing on underrepresented categories and regions.
+## Dataset Source
+- **Source**: [Kaggle](https://www.kaggle.com/datasets/nithyak7/kickstarter-project?resource=download)
