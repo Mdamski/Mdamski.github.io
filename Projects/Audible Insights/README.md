@@ -1,4 +1,4 @@
-# Audible Insights Dashboard - Data Analysis Project
+# Audible - Audiobook Sales Data - Data Analysis Project
 
 ## Tools and Skills
 ### Tools Used: Power Query, DAX, Power BI
