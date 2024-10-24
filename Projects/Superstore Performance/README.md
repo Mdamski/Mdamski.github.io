@@ -157,4 +157,6 @@ A 1-to-many relationship was established between the Dim_Date table (1) and the 
 - **Sales by Segment and Region**: Corporate contributed to strong sales growth YTD compared to PYTD.
 
 ## Conclusion:
-This analysis highlights substantial YTD growth across multiple metrics (profit, quantity, sales) compared to PYTD. Indiana and California are standout states for profit growth, while mid-year and year-end spikes in sales and quantity suggest seasonal shopping patterns. The steady performance of Standard and Second Class shipping methods also points to a consistent delivery preference linked to increased profitability and sales volume. 
+This analysis highlights substantial YTD growth across multiple metrics (profit, quantity, sales) compared to PYTD. Indiana and California are standout states for profit growth, while mid-year and year-end spikes in sales and quantity suggest seasonal shopping patterns. The steady performance of Standard and Second Class shipping methods also points to a consistent delivery preference linked to increased profitability and sales volume.    
+## Dataset Source
+**Source**: [Kaggle](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
