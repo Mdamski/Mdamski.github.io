@@ -93,3 +93,5 @@ inner join inventory i on s.Product_ID = i.Product_ID and s.Store_ID = i.Store_I
 group by 1, 2, 3, 5
 order by 1, 2, 3
 ```
+## Dataset Source
+- **Source**: [mavenanalytics](https://mavenanalytics.io/data-playground?search=Mexico%20Toy%20Sales)
