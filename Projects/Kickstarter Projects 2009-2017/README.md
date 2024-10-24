@@ -1,5 +1,5 @@
 # Kickstarter Projects - Data Analysis Project
-## Tools & Skills
+## Tools and Skills
 ### Tools Used: Power Query, Power BI
 ### Skills Demonstrated: Data Transformation, Data Visualization
 
@@ -30,11 +30,10 @@ The dataset contains the following columns:
 
 Through this analysis, several trends emerged that provide valuable insights for project creators and Kickstarter as a platform.
 
-- Dominant Categories: Categories like Film & Video, Music, and Technology were the most active on Kickstarter, but also had some of the highest failure rates. This shows that high activity does not always equate to high 
-success, particularly in competitive categories.
-- Country Performance: The United States overwhelmingly leads in successful projects, but other countries, especially in Europe and Australia, are also strong players. These insights could help inform geographical 
+- **Dominant Categories**: Categories like Film & Video, Music, and Technology were the most active on Kickstarter, but also had some of the highest failure rates. This shows that high activity does not always equate to high success, particularly in competitive categories.
+- **Country Performance**: The United States overwhelmingly leads in successful projects, but other countries, especially in Europe and Australia, are also strong players. These insights could help inform geographical 
 expansion strategies.
-- Yearly Trends: Up until 2012, Kickstarter experienced steady growth in project activity. From 2012 to 2014, the number of projects remained relatively stable. However, 2014 and 2015 saw a significant increase in failed projects, with 2014 also marking a peak in canceled projects. In the years 2016 and 2017, project activity began to stabilize, returning to more typical levels following the earlier peaks.
-- Project Performance: Projects such as Exploding Kittens and Coolest Cooler achieved extraordinary success, both in terms of exceeding their goals and in total pledged money. This suggests that projects with strong viral appeal and consumer-focused products are more likely to outperform their targets.
+- **Yearly Trends**: Up until 2012, Kickstarter experienced steady growth in project activity. From 2012 to 2014, the number of projects remained relatively stable. However, 2014 and 2015 saw a significant increase in failed projects, with 2014 also marking a peak in canceled projects. In the years 2016 and 2017, project activity began to stabilize, returning to more typical levels following the earlier peaks.
+- **Project Performance**: Projects such as Exploding Kittens and Coolest Cooler achieved extraordinary success, both in terms of exceeding their goals and in total pledged money. This suggests that projects with strong viral appeal and consumer-focused products are more likely to outperform their targets.
 
 These insights could be valuable for project creators looking to launch successful campaigns, as well as for platform strategy and marketing efforts aimed at reviving activity or focusing on underrepresented categories and regions.
