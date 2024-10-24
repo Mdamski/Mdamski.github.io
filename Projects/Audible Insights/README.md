@@ -44,10 +44,10 @@ then Number.FromText(Text.BeforeDelimiter([time], " hrs"))
 else 0),
     #"Changed Type1" = Table.TransformColumnTypes(#"Added Custom",{{"time_hours", Int64.Type}}),
     #"Added Custom1" = Table.AddColumn(#"Changed Type1", "time_minutes", each if Text.Contains([time], "mins") then
-   if Text.Contains([time], "and") then 
-      Number.FromText(Text.BetweenDelimiters([time], "and ", " mins"))
-   else 
-      Number.FromText(Text.BeforeDelimiter([time], " mins"))
+       if Text.Contains([time], "and") then 
+          Number.FromText(Text.BetweenDelimiters([time], "and ", " mins"))
+       else 
+          Number.FromText(Text.BeforeDelimiter([time], " mins"))
 else 0),
     #"Filtered Rows" = Table.SelectRows(#"Added Custom1", each true),
     #"Added Custom2" = Table.AddColumn(#"Filtered Rows", "time_corrected", each [time_hours] * 60 + [time_minutes]),
