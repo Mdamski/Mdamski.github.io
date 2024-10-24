@@ -32,11 +32,11 @@ Before diving into the analysis, the data underwent the following cleaning steps
 ## Data Cleaning in Power Querry Details 
 
 Detailed list of the applied steps during data cleaning process
-```M
+```powerquerry
 let
     Source = Csv.Document(File.Contents("C:\Users\Micha\Desktop\Dane\Audible\audible_uncleaned.csv"),[Delimiter=",", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.None]),
     #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
-    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"name", type text}, {"author", type text}, {"narrator", type text}, {"time", type text}, {"releasedate", type date}, {"language", type text}, {"stars", type text}, {"price", type text}}),
+   #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"name", type text}, {"author", type text}, {"narrator", type text}, {"time", type text}, {"releasedate", type date}, {"language", type text}, {"stars", type text}, {"price", type text}}),
     #"Extracted Text After Delimiter" = Table.TransformColumns(#"Changed Type", {{"author", each Text.AfterDelimiter(_, ":"), type text}}),
     #"Extracted Text After Delimiter1" = Table.TransformColumns(#"Extracted Text After Delimiter", {{"narrator", each Text.AfterDelimiter(_, ":"), type text}}),
     #"Added Custom" = Table.AddColumn(#"Extracted Text After Delimiter1", "time_hours", each if Text.Contains([time], "hrs") 
