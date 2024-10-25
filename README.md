@@ -1,20 +1,27 @@
-# Data Analyst & Civil Engineer
+# Data Analyst
 
 ## Technical Skills: Power BI, SQL, DAX, Power Query, Excel, Data Cleaning, Data Transformation, Interactive Visualizations
 
 ## Education
-M.S., Civil Engineering | Politechnika Bydgoska (_March 2023_)   
-B.S., Civil Engineering | Uniwersytet Technologiczno-Przyrodniczy w Bydgoszczy (_April 2020_)
+M.S., Civil Engineering | Bydgoszcz University of Science and Technology (_March 2023_)   
+B.S., Civil Engineering | Bydgoszcz University of Science and Technology (_April 2020_)
+
+## Certifications
+
+- **[Data Analysis and Visualization with Power BI](https://www.coursera.org/account/accomplishments/verify/RJMMJX3XLPFH)** | [Issued by Coursera] _(July 2024)_
+- **[Google Data Analytics Professional Certificate](https://www.credly.com/badges/688e19b5-89df-411f-a9c3-bf492b2f2dbd/linked_in_profile)** | [Issued by Coursera] _(June 2024)_
+- **[Data Analysis in SQL](https://certificate.certesto.com/ca5ee110-be72-49ad-9643-047a005f8329)** | [Issued by Certesto] _(April 2024)_
+- **[Data Analysis in Microsoft Excel](https://certificate.certesto.com/048aafdc-b2ed-428a-9da4-d23a5807094b)** | [Issued by Certesto] _(March 2024)_
+- **[Stanford Introduction to Statistics](https://www.coursera.org/account/accomplishments/verify/NYB4JD8UKFFD)** | [Issued by Coursera] _(March 2024)_
 
 ## Work Experience
 
-### Data Analyst (Freelance / Self-Employed) (Year - Present)
-- Developed data analysis and visualization projects using Power BI, SQL, and Excel to provide insights into sales trends, inventory management, and customer behavior.
-- Created interactive dashboards with dynamic slicers, year-to-date (YTD) vs prior year-to-date (PYTD) comparisons, drill-down features, and waterfall charts to drive business decision-making.
-
 ### Construction Site Engineer (3 Years)
-- Managed large-scale construction projects from inception to completion, ensuring timely and on-budget delivery.
-- Collaborated with cross-functional teams to solve complex engineering problems, contributing to efficient and safe project execution.
+
+- **Team Collaboration**: Worked closely with diverse departments, including design, logistics, and safety, to ensure smooth project execution, clear communication, and quick adaptation to project needs.
+- **Problem Solving & Critical Thinking**: Addressed complex on-site challenges by identifying root causes, coordinating with subcontracting teams, and implementing efficient solutions to keep projects on track.
+- **Adaptability & Decision-Making**: Exercised sound judgment and flexibility in handling unexpected changes.
+- **Construction Supervision & Project Coordination**: Oversaw all stages of construction projects, ensuring alignment with project timelines and safety standards through effective team coordination and proactive management.
 
 ## Projects
 
