@@ -25,7 +25,7 @@ The dataset contains the following columns:
 - Category: Product category (e.g., Furniture, Technology). (Text)
 - Sub-Category: More specific classification within the product category (e.g., Bookcases). (Text)
 - Product Name: Name of the product. (Text)
-- Sales: Total sales amount for the order. (Numeric)
+- Sales: Revenue generated from the sale of the product. (Numeric)
 - Quantity: Number of units sold. (Numeric)
 - Discount: Discount applied to the order. (Numeric, Percentage)
 - Profit: Profit generated from the order. (Numeric)
@@ -135,23 +135,20 @@ VAR result = SWITCH(
 RETURN
 result
 ```
-## Model Relationships
-A 1-to-many relationship was established between the Dim_Date table (1) and the Fact_sales table (many) using the 'Order Date' field. This relationship enables accurate time-based calculations for year-over-year analysis.
 
 ## Dashboard & Insights
 
-![image](https://github.com/user-attachments/assets/e370c0e4-01f0-4e61-af39-aac397c9f366)
+![image](https://github.com/user-attachments/assets/55043a63-7189-43a5-959e-2fb001963f8a)
 - **State-Level Profit Growth**: Indiana and California show notable growth in profitability YTD compared to PYTD.
 - **Profit by Ship Mode**: Standard Class and Second Class delivery methods contributed the most to the overall profit growth YTD.
 - **Profit by Segment and Region**: The Corporate and Consumer segments in the Central region showed significant YTD profit growth, while the Home Office segment displayed moderate growth across most regions.
 
-![image](https://github.com/user-attachments/assets/58bb4848-30de-4536-9fd6-d28a80007174)
+![image](https://github.com/user-attachments/assets/ad0c80dd-0917-451c-9c25-b1bcbd2adbf2)
 - **Quantity by State**: Growth in quantity sold YTD outpaced PYTD in key regions like California and Texas.
 - **Monthly Performance**: Quantity sold shows consistent growth YTD compared to PYTD, particularly in mid-year (May) and the last quarter.
-- **Quantity by Ship Mode**: Similar to profit growth, Standard Class and First Class deliveries contributed significantly to quantity growth YTD.
+- **Quantity by Ship Mode**: Similar to profit growth, Standard Class deliveries contributed significantly to quantity growth YTD.
 
-![image](https://github.com/user-attachments/assets/154ed10b-9f72-45fe-aa3e-646512d20a4d)
-
+![image](https://github.com/user-attachments/assets/dd4cb52e-5461-4437-9de8-73a649bb9e45)
 - **Sales by the State**: The biggest growth is noted in California and Indiana.
 - **Mothly Performance**: Sales increased steadily throughout the year, with notable growth in mid-year (May) and the last quarter (October and December). A slight dip was observed in August YTD vs PYTD.
 - **Sales by Segment and Region**: Corporate contributed to strong sales growth YTD compared to PYTD.
