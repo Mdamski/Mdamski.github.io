@@ -41,9 +41,8 @@
 ### Audible - Audiobook Sales Data - Data Analysis Project
 [Link](https://github.com/Mdamski/Mdamski.github.io/blob/main/Projects/Audible%20Insights/README.md)   
 **Tools Used**: Power BI, Power Query, DAX
--	Conducted thorough data cleaning, including removing prefixes, converting columns to appropriate data types and reformatting for consistency and accurate analysis.
+-	Cleaned and transformed data, including converting time formats and adjusting data types, to ensure accurate insights and visualizations. 
 - Created a detailed Power BI dashboard to analyze audiobook sales performance, pricing trends, and customer ratings.
-- Cleaned and transformed data, including converting time formats and adjusting data types, to ensure accurate insights and visualizations.   
 
 <div align="center">
   <img src="assets/Audible.png" alt="Audible Project" width="500" style="margin: 40px 0;" />
