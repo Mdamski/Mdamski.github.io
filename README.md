@@ -18,7 +18,7 @@
 
 ### Construction Site Engineer (3 Years)
 
-- **Team Collaboration**: Worked closely with diverse departments, including design, logistics, and safety, to ensure smooth project execution, clear communication, and quick adaptation to project needs.
+- **Teamwork**: Worked closely with diverse departments, including design, logistics, and safety, to ensure smooth project execution, clear communication, and quick adaptation to project needs.
 - **Problem Solving & Critical Thinking**: Addressed complex on-site challenges by identifying root causes, coordinating with subcontracting teams, and implementing efficient solutions to keep projects on track.
 - **Adaptability & Decision-Making**: Exercised sound judgment and flexibility in handling unexpected changes.
 - **Construction Supervision & Project Coordination**: Oversaw all stages of construction projects, ensuring alignment with project timelines and safety standards through effective team coordination and proactive management.
