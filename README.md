@@ -3,7 +3,7 @@
 ## Technical Skills: Power BI, SQL, DAX, Power Query, Excel, Data Cleaning, Data Transformation, Interactive Visualizations
 
 ## Education
-- M.S., Civil Engineering | Bydgoszcz University of Science and Technology (_March 2023_)   
+- M.S.E., Civil Engineering | Bydgoszcz University of Science and Technology (_March 2023_)   
 - B.S., Civil Engineering | Bydgoszcz University of Science and Technology (_April 2020_)
 
 ## Certifications
