@@ -1,6 +1,7 @@
 # Data Analyst
 
-## Technical Skills: Power BI, SQL, DAX, Power Query, Excel, Data Cleaning, Data Transformation, Interactive Visualizations
+## Skills: DAX, Excel, Power BI, Power Querry, SQL
+## Tools: Data Analysis, Data Cleaning, Data Transformation, Data Visualization
 
 ## Education
 - M.S.E., Civil Engineering | Bydgoszcz University of Science and Technology (_March 2023_)   
