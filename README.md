@@ -11,8 +11,8 @@
 
 - **[Data Analysis and Visualization with Power BI](https://www.coursera.org/account/accomplishments/verify/RJMMJX3XLPFH)** | [Issued by Coursera] _(July 2024)_
 - **[Google Data Analytics Professional Certificate](https://www.credly.com/badges/688e19b5-89df-411f-a9c3-bf492b2f2dbd/linked_in_profile)** | [Issued by Coursera] _(June 2024)_
-- **[Data Analysis in SQL](https://certificate.certesto.com/ca5ee110-be72-49ad-9643-047a005f8329)** | [Issued by Certesto] _(April 2024)_
-- **[Data Analysis in Microsoft Excel](https://certificate.certesto.com/048aafdc-b2ed-428a-9da4-d23a5807094b)** | [Issued by Certesto] _(March 2024)_
+- **[Data Analysis in SQL](https://certificate.certesto.com/ca5ee110-be72-49ad-9643-047a005f8329)** | [Issued by KajoData] _(April 2024)_
+- **[Data Analysis in Microsoft Excel](https://certificate.certesto.com/048aafdc-b2ed-428a-9da4-d23a5807094b)** | [Issued by KajoData] _(March 2024)_
 - **[Stanford Introduction to Statistics](https://www.coursera.org/account/accomplishments/verify/NYB4JD8UKFFD)** | [Issued by Coursera] _(March 2024)_
 
 ## Work Experience
