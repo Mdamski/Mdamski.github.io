@@ -138,17 +138,17 @@ result
 
 ## Dashboard & Insights
 
-![image](https://github.com/user-attachments/assets/55043a63-7189-43a5-959e-2fb001963f8a)
+![image](https://github.com/user-attachments/assets/e85af486-5321-4a0a-8063-faf8534ca5fe)
 - **State-Level Profit Growth**: Indiana and California show notable growth in profitability YTD compared to PYTD.
 - **Profit by Ship Mode**: Standard Class and Second Class delivery methods contributed the most to the overall profit growth YTD.
 - **Profit by Segment and Region**: The Corporate and Consumer segments in the Central region showed significant YTD profit growth, while the Home Office segment displayed moderate growth across most regions.
 
-![image](https://github.com/user-attachments/assets/ad0c80dd-0917-451c-9c25-b1bcbd2adbf2)
+![image](https://github.com/user-attachments/assets/74325af7-bc4b-4ea0-a9cb-99eb5d399e14)
 - **Quantity by State**: Growth in quantity sold YTD outpaced PYTD in key regions like California and Texas.
 - **Monthly Performance**: Quantity sold shows consistent growth YTD compared to PYTD, particularly in mid-year (May) and the last quarter.
 - **Quantity by Ship Mode**: Similar to profit growth, Standard Class deliveries contributed significantly to quantity growth YTD.
 
-![image](https://github.com/user-attachments/assets/dd4cb52e-5461-4437-9de8-73a649bb9e45)
+![image](https://github.com/user-attachments/assets/f7e35a67-a15e-4e7e-9bce-9ec72203ba47)
 - **Sales by the State**: The biggest growth is noted in California and Indiana.
 - **Mothly Performance**: Sales increased steadily throughout the year, with notable growth in mid-year (May) and the last quarter (October and December). A slight dip was observed in August YTD vs PYTD.
 - **Sales by Segment and Region**: Corporate contributed to strong sales growth YTD compared to PYTD.
