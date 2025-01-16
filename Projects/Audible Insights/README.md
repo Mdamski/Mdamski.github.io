@@ -29,43 +29,7 @@ Before diving into the analysis, the data underwent the following cleaning steps
 - Time: Transformed from a text format (e.g., "2 hrs and 20 mins") to a numeric format representing total minutes (e.g., "140").
 - Stars: Transformed from a text format (e.g., "5 out of 5 stars34 ratings") to two separet columns. One for stars and second for ratings.
 
-## Data Cleaning in Power Querry Details 
 
-Detailed list of the applied steps during data cleaning process
-```powerquery
-{% raw %}
-let
-    Source = Csv.Document(File.Contents("C:\Users\Micha\Desktop\Dane\Audible\audible_uncleaned.csv"),[Delimiter=",", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.None]),
-    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
-    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"name", type text}, {"author", type text}, {"narrator", type text}, {"time", type text}, {"releasedate", type date}, {"language", type text}, {"stars", type text}, {"price", type text}}),
-    #"Extracted Text After Delimiter" = Table.TransformColumns(#"Changed Type", {{"author", each Text.AfterDelimiter(_, ":"), type text}}),
-    #"Extracted Text After Delimiter1" = Table.TransformColumns(#"Extracted Text After Delimiter", {{"narrator", each Text.AfterDelimiter(_, ":"), type text}}),
-    #"Added Custom" = Table.AddColumn(#"Extracted Text After Delimiter1", "time_hours", each if Text.Contains([time], "hrs") then Number.FromText(Text.BeforeDelimiter([time], " hrs")) else 0),
-    #"Changed Type1" = Table.TransformColumnTypes(#"Added Custom",{{"time_hours", Int64.Type}}),
-    #"Added Custom1" = Table.AddColumn(#"Changed Type1", "time_minutes", each if Text.Contains([time], "mins") then if Text.Contains([time], "and") then Number.FromText(Text.BetweenDelimiters([time], "and ", " mins")) else Number.FromText(Text.BeforeDelimiter([time], " mins")) else 0),
-    #"Filtered Rows" = Table.SelectRows(#"Added Custom1", each true),
-    #"Added Custom2" = Table.AddColumn(#"Filtered Rows", "time_corrected", each [time_hours] * 60 + [time_minutes]),
-    #"Changed Type2" = Table.TransformColumnTypes(#"Added Custom2",{{"time_minutes", Int64.Type}, {"time_corrected", Int64.Type}}),
-    #"Inserted Text Before Delimiter" = Table.AddColumn(#"Changed Type2", "Text Before Delimiter", each Text.BeforeDelimiter([stars], " out"), type text),
-    #"Renamed Columns" = Table.RenameColumns(#"Inserted Text Before Delimiter",{{"Text Before Delimiter", "stars_correction1"}}),
-    #"Replaced Value" = Table.ReplaceValue(#"Renamed Columns",".",",",Replacer.ReplaceText,{"stars_correction1"}),
-    #"Added Custom3" = Table.AddColumn(#"Replaced Value", "Stars_corrected", each if Text.Contains([stars_correction1], "Not rated yet") then 0 else Number.FromText([stars_correction1])),
-    #"Changed Type3" = Table.TransformColumnTypes(#"Added Custom3",{{"Stars_corrected", type number}}),
-    #"Inserted Text Between Delimiters" = Table.AddColumn(#"Changed Type3", "Text Between Delimiters", each Text.BetweenDelimiters([stars], "stars", " ratings"), type text),
-    #"Renamed Columns1" = Table.RenameColumns(#"Inserted Text Between Delimiters",{{"Text Between Delimiters", "Ratings_correction1"}}),
-    #"Inserted Text Before Delimiter1" = Table.AddColumn(#"Renamed Columns1", "Text Before Delimiter", each Text.BeforeDelimiter([Ratings_correction1], " rating"), type text),
-    #"Renamed Columns2" = Table.RenameColumns(#"Inserted Text Before Delimiter1",{{"Text Before Delimiter", "Ratings_correction2"}}),
-    #"Changed Type4" = Table.TransformColumnTypes(#"Renamed Columns2",{{"Ratings_correction2", Int64.Type}}),
-    #"Added Custom4" = Table.AddColumn(#"Changed Type4", "Ratings_corrected", each if [Ratings_correction2] = null then 0 else [Ratings_correction2]),
-    #"Extracted Text Before Delimiter" = Table.TransformColumns(#"Added Custom4", {{"price", each Text.BeforeDelimiter(_, "."), type text}}),
-    #"Replaced Value1" = Table.ReplaceValue(#"Extracted Text Before Delimiter",",","",Replacer.ReplaceText,{"price"}),
-    #"Changed Type5" = Table.TransformColumnTypes(#"Replaced Value1",{{"price", Currency.Type}}),
-    #"Removed Errors" = Table.RemoveRowsWithErrors(#"Changed Type5", {"price"}),
-    #"Changed Type6" = Table.TransformColumnTypes(#"Removed Errors",{{"Ratings_corrected", Int64.Type}})
-in
-    #"Changed Type6"
-{% endraw %}
-```
 ## Dataset After Cleaning
 
 - Name: The name of the audiobook. (Text)
