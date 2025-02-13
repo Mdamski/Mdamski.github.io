@@ -110,30 +110,24 @@ YTD vs PYTD = [S_YTD] - [S_PYTD]
 **Dynamic YTD Calculation (Switch Function)** - Dynamically calculates YTD (Sales, Profit, or Quantity) based on slicer selection.
 ```
 S_YTD = 
-VAR selected_value = SELECTEDVALUE(Slc_Values[Values])
-VAR result = SWITCH(
-    selected_value,
+SWITCH(
+    SELECTEDVALUE(Slc_Values[Values]),
     "Sales", [YTD_Sales],
     "Quantity", [YTD_Quantity],
     "Profit", [YTD_Profit],
     BLANK()
 )
-RETURN
-result
 ```
 **Dynamic PYTD Calculation** - Dynamically calculates PYTD (Sales, Profit, or Quantity) based on slicer selection.
 ```
 S_PYTD = 
-VAR selected_value = SELECTEDVALUE(Slc_Values[Values])
-VAR result = SWITCH(
-    selected_value,
+SWITCH(
+    SELECTEDVALUE(Slc_Values[Values]),
     "Sales", [PYTD_Sales],
     "Quantity", [PYTD_Quantity],
     "Profit", [PYTD_Profit],
     BLANK()
 )
-RETURN
-result
 ```
 
 ## Dashboard & Insights
